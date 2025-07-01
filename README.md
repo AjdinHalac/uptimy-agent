@@ -24,7 +24,6 @@ curl -fsSL https://github.com/AjdinHalac/uptimy-agent/releases/download/${AGENT_
 
 - **Linux:** Installs as a systemd service  
 - **macOS:** Installs as a launchd agent  
-- **Both:** Validates checksum before install  
 - **Requires root privileges (sudo) to install and run as a service**
 
 ---
@@ -36,11 +35,10 @@ curl -fsSL https://github.com/AjdinHalac/uptimy-agent/releases/download/${AGENT_
 3. Run:
 
 ```powershell
-.\install.ps1 -AgentID "your-agent-id" -AgentSecret "your-agent-secret" -Version "v1.0.7"
+.\install.ps1 -AgentID "your-agent-id" -AgentSecret "your-agent-secret"
 ```
 
 - Downloads the correct `.exe` binary for your architecture  
-- Validates checksum  
 - Registers a Windows Service  
 - Starts the agent automatically  
 
